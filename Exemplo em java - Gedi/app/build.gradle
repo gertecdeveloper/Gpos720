@@ -47,7 +47,7 @@ android {
 
 dependencies {
 
-    implementation files('libs/libgedi-0.16.17-beta.0-gpos720-payment-release.aar')
+    implementation files('libs/libgedi-0.16.20-gpos720-payment-release.aar')
     implementation files('libs/android-easy-layer-debug_gpos720.aar')
 
     implementation 'com.journeyapps:zxing-android-embedded:4.3.0'

@@ -45,7 +45,7 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     // LIBS
-    implementation files('libs/libgedi-0.16.16-beta.0-gpos720-payment-release.aar')
+    implementation files('libs/libgedi-0.16.20-gpos720-payment-release.aar')
     implementation files('libs/android-easy-layer-debug_gpos720.aar')
 
     // TESTS
