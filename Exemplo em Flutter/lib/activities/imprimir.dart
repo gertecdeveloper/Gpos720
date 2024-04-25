@@ -174,7 +174,7 @@ class _Imprimir extends State<Imprimir> {
                 child: FittedBox(
                   fit: BoxFit.fitWidth,
                   child: Text(
-                    "Funções Impressão G700/G800",
+                    "Funções Impressão Gpos720",
                     style:
                         TextStyle(fontSize: 25.sp, fontWeight: FontWeight.bold),
                   ),
