@@ -1,4 +1,5 @@
 # gpos720_flutter
+Versão do SDK: flutter_windows_3.19.5-stable
 
 A new Flutter project.
 
