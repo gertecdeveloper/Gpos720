@@ -1,29 +1,22 @@
 package com.example.exemplogpos720_kot.ExemploTEF
 
 
-import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.text.InputType
 import android.text.method.DigitsKeyListener
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
-import android.widget.CompoundButton
 import android.widget.EditText
 import android.widget.RadioButton
-import androidx.annotation.Nullable
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat.startActivityForResult
 import br.com.gertec.gedi.GEDI
 import br.com.gertec.gedi.enums.GEDI_PRNTR_e_Status
 import br.com.gertec.gedi.exceptions.GediException
 import br.com.gertec.gedi.interfaces.IGEDI
 import br.com.gertec.gedi.interfaces.IPRNTR
-import com.example.exemplogpos720_kot.ExemploImpressora.Impressora
 import com.example.exemplogpos720_kot.ExemploImpressora.tPRNTR
 import com.example.exemplogpos720_kot.R
 import com.google.gson.Gson

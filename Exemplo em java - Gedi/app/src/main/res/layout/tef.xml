@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -85,7 +87,8 @@
                     android:id="@+id/rbCredito"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Crédito" />
+                    android:text="Crédito"
+                    />
 
                 <RadioButton
                     android:id="@+id/rbDebito"
@@ -97,7 +100,7 @@
                     android:id="@+id/rbTodos"
                     android:layout_width="134dp"
                     android:layout_height="wrap_content"
-                    android:text="Voucher(ger7)\nTodos(M-Sitef)" />
+                    android:text="Voucher\nTodos(M-Sitef)" />
 
 
             </RadioGroup>
@@ -195,7 +198,7 @@
                     android:id="@+id/rbGer7"
                     android:layout_width="98dp"
                     android:layout_height="wrap_content"
-                    android:text="Ger7" />
+                    android:text="Outro" />
 
                 <RadioButton
                     android:id="@+id/rbMsitef"
@@ -217,40 +220,60 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtParcelas" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnEnviarTransacao"
-                android:layout_width="383dp"
+                android:layout_width="match_parent"
                 android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shadow"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Enviar Transação"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cbImpressao" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnCancelarTransacao"
-                android:layout_width="383dp"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shadow"
+                android:textColor="@color/white"
                 android:text="Cancelar Transação"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnEnviarTransacao" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnFuncoes"
-                android:layout_width="383dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:background="@drawable/shadow"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Funções"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnCancelarTransacao" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnReimpressao"
-                android:layout_width="383dp"
+                android:layout_width="match_parent"
                 android:layout_height="43dp"
+                android:background="@drawable/shadow"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Reimpressão"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -259,6 +282,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
 
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

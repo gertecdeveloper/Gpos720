@@ -1,15 +1,15 @@
 plugins {
-    id 'com.android.application'
+    alias(libs.plugins.android.application)
 }
 
 android {
-    namespace 'com.example.gpos720'
-    compileSdk 33
+    namespace 'com.exampledv.gpos720_java'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.gpos720"
+        applicationId "com.exampledv.gpos720_java"
         minSdk 22
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -18,7 +18,7 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file('..\\Chaves\\AndroidDefaultDev_Enhanced.jks')
+            storeFile file('AndroidDefaultDev_Enhanced.jks')
             storePassword 'GertecDefaultNDevelopmentKeyStore'
             keyAlias 'androidenhanceddev'
             keyPassword 'Gertec'
@@ -40,27 +40,26 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
 dependencies {
 
-    implementation files('libs/libgedi-0.16.20-gpos720-payment-release.aar')
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation files('libs/libgedi-0.16.23.009f943-gpos720-payment-release.aar')
     implementation files('libs/android-easy-layer-debug_gpos720.aar')
 
     implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
     implementation 'me.dm7.barcodescanner:zxing:1.9.8'
     implementation 'com.google.zxing:core:3.5.1'
-
-
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
-    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.google.code.gson:gson:2.11.0'
 }
